@@ -53,10 +53,12 @@ Laravel menyediakan konfigurasi CORS pada file:
 config/cors.php
 
 Contoh konfigurasi:
+```
 'paths' => ['api/*'],
 'allowed_methods' => ['*'],
 'allowed_origins' => ['*'],
 'allowed_headers' => ['*'],
+```
 
 ## 3. Perbedaan SQL dan NoSQL Database
 
@@ -147,6 +149,7 @@ Route::middleware('auth:api')->group(function () {
 
 ## Cara Instalasi 
 ### backend
+```
 cd backend
 composer install
 cp .env.example .env
@@ -154,9 +157,12 @@ php artisan key:generate
 php artisan jwt:secret
 php artisan migrate
 php artisan serve
+```
 
 ### frontend
+```
 cd frontend
 npm install
 npm run dev
+```
 
